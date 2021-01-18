@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="450dp"
+    android:background="#66000000"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="#ff3300"
+        android:gravity="center"
+        android:text="Close"
+        android:textColor="#ffebe6"
+        android:textStyle="bold"
+        tools:text="X" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Work Experience"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#ffffff"/>
+
+        //AICS
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:id="@+id/aicslayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnlocation1"
+                    android:layout_width="30dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/work"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intern IT-Solution Department\n	Achieve Without Borders \nBangkal, Makati City \nJuly 30, 2019- October 18, 2019"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        //RMTU
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/aicslayout"
+            android:id="@+id/rmtulayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnlocation"
+                    android:layout_width="30dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/work"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Warehouse Supervisor\nMediman Corporation \nMakati Ave, Makati City\nNovember 16, 2017- August 06, 2018"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        //NZC
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rmtulayout"
+            android:id="@+id/nzclayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnlocation2"
+                    android:layout_width="30dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/work"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Head Food Checker\nTop Resto Management and Services\nQueensway Subdivision, Paranaque City\nOctober 2016- November 2017"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        //Sta.Rita
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/nzclayout"
+            android:id="@+id/stalayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnlocation3"
+                    android:layout_width="30dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/work"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quality Control\nBenc-zy Enterprises  \nFairview Quezon City\nApril 06 2013-April 09 2014"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

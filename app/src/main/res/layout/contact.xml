@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="280dp"
+    android:background="#66000000"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="#ff3300"
+        android:gravity="center"
+        android:text="Close"
+        android:textColor="#ffebe6"
+        android:textStyle="bold"
+        tools:text="X" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Click to Contact "
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#ffffff"/>
+
+        //Location
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:id="@+id/locationlayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnlocation"
+                    android:layout_width="18dp"
+
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/location"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taguig City"
+                    android:onClick="location"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        //Phone Number
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/phonelayout"
+            android:layout_below="@id/locationlayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:layout_width="18dp"
+
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/phonenumber"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:id="@+id/idbtnCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnCall"
+                    android:textSize="20dp"
+                    android:text="+639150669721"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        //Facebook
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/facebooklayout"
+            android:layout_below="@+id/phonelayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnfacebook"
+                    android:layout_width="18dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:onClick="facebookk"
+                    android:background="@drawable/facebook"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erick Edquiban"
+                    android:onClick="facebook"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //Gmail
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/facebooklayout"
+            android:id="@+id/gmaillayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btngmail"
+                    android:layout_width="18dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ema"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="erickedquiban03@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:onClick="email"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

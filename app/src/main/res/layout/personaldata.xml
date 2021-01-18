@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="400dp"
+    android:background="#66000000"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="#ff3300"
+        android:gravity="center"
+        android:text="Close"
+        android:textColor="#ffebe6"
+        android:textStyle="bold"
+        tools:text="X" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:text="Basic Info"
+    android:fontFamily="serif-monospace"
+    android:textStyle="bold"
+    android:textSize="15dp"
+    android:textColor="#ffffff"/>
+
+        //Gender
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:id="@+id/locationlayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnlocation"
+                    android:layout_width="18dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/gender"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        //Date of Birth
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/phonelayout"
+            android:layout_below="@id/locationlayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:layout_width="18dp"
+
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/birthday"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:id="@+id/idbtnCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Dec.10,199?"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        //Language
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/facebooklayout"
+            android:layout_below="@+id/phonelayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnfacebook"
+                    android:layout_width="18dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/language"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilipino/English/Sambal"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //Place of Birth
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/facebooklayout"
+            android:id="@+id/gmaillayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btngmail"
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/place_of_birth" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sta.Rita Masinloc Zambales"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //Nationality
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gmaillayout"
+            android:id="@+id/nationality"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/nationality" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filipino"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //interest
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/nationality"
+            android:id="@+id/Interest"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/interest" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interest:"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //intereststart
+
+        <LinearLayout
+
+            android:layout_below="@+id/Interest"
+            android:id="@+id/Intereststart"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/tarvel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travel"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+                <Button
+
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/music" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+                <Button
+
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/food" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+
+                <Button
+
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/technology" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Technology"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+                <Button
+
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/song" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Song Writing"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

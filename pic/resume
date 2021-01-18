@@ -1,0 +1,78 @@
+ 1) // sa java ng personal
+ public void ShowPopupdev(View v) {
+        TextView txtclose;
+        Button btnFollow;
+        myDialog.setContentView(R.layout.compdev);
+        txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
+        txtclose.setText("X");
+        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
+
+    }
+
+
+    public void ShowPopupsetting(View v) {
+        TextView txtclose;
+        Button btnFollow;
+
+        myDialog.setContentView(R.layout.compsetting);
+        txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
+        txtclose.setText("X");
+        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
+    }
+
+    public void btnClick1(View w){
+        String url = "http://maps.google.co.uk/maps?q=Pharmacy&hl=en";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        intent.setClassName("com.google.android.apps.maps","com.google.android.maps.MapsActivity");
+        startActivity(intent);
+    }
+    public void btnClick2(View w){
+        String url = "https://www.healthmap.org/en/";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(intent);
+    }
+
+    public void btnClick3(View w){
+        String url = "http://maps.google.co.uk/maps?q=Hospital&hl=en";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        intent.setClassName("com.google.android.apps.maps","com.google.android.maps.MapsActivity");
+        startActivity(intent);
+    }
+
+
+
+2)//personal data
+
+  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Share the Love"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/btnfollow"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+       
+        android:onClick="btnClick"
+        android:textColor="#000000" />

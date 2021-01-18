@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+
+            android:id="@+id/idTextViewlayout">
+
+        <ImageView
+            android:id="@+id/idImageView"
+            android:background="#008080"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:src="@drawable/s1" />
+
+         <TextView
+        android:text="Odoo-13 Manila RoadShow \n We attended an Odoo13 manila Road show to tackle the new features of odoo 13. This is one the best experience that I have here in my internship over 100 companies come in  to this event. They also share their experience in odoo 12 and what they expected in odoo 13. There’s a lot of suggestion on what is good to add in odoo ERP system."
+        android:textAlignment="center"
+        android:id="@+id/idTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+        </LinearLayout>
+
+
+    //Phone Number
+
+        <LinearLayout
+        android:layout_marginTop="20dp"
+            android:layout_below="@+id/idTextViewlayout"
+        android:id="@+id/phonelayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnphonenumber"
+                android:layout_width="18dp"
+                android:onClick="location"
+                android:layout_marginRight="2dp"
+                android:layout_height="20dp"
+                android:background="@drawable/phone_message"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-1dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+639150669721"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        //Facebook
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/facebooklayout"
+            android:layout_below="@+id/phonelayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnfacebook"
+                    android:layout_width="18dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/facebook"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ercik Edquiban"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //Gmail
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/facebooklayout"
+            android:id="@+id/gmaillayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btngmail"
+                    android:layout_width="18dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/gmail"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="erickedquiban03@gmail.com"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        //Location
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gmaillayout"
+            android:id="@+id/locationlayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnlocation"
+                    android:layout_width="18dp"
+
+                    android:layout_marginRight="2dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/location"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taguig City"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

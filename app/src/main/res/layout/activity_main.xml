@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/imagestart"
+            app:srcCompat="@drawable/erick"
+            android:layout_height="120dp"/>
+
+        <Button
+            android:id="@+id/btnstart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/imagestart"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/taba"
+            android:gravity="center"
+
+            android:text="Erick D. Edquiban"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="180dp"
+            android:verticalScrollbarPosition="defaultPosition">
+
+            //Personal Data
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="69dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnpersonaldata"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/personal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Data"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+            //Beaach
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="69dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnability"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="Skills"
+                    android:background="@drawable/ability"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skills"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+
+            //background study
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="69dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/study"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="Education"
+                    android:background="@drawable/education"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+
+
+//start of second line of the button
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="280dp"
+            android:verticalScrollbarPosition="defaultPosition">
+
+        //Personal Data
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnapps"
+                android:onClick="MobileApplication"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/mobileapps"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-1dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Application"
+                android:textStyle="bold"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+        //Beaach
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btncertificate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="Certificate"
+                android:background="@drawable/certificate"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-1dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Certificate"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="69dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnwork"
+                    android:onClick="Work"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/work"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-1dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Work Experience"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
